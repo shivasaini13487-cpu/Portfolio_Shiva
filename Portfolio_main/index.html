@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiva_Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="loader">
+    <div class="loader-mark">SHIVA SAINI — INITIALIZING PORTFOLIO</div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <header>
+    <nav class="wrap">
+      <div class="logo">SS<span>.</span>dev</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </div>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="hero-loc">Noida, UP, India</div>
+        <h1 class="hero-name">Shiva Saini</h1>
+        <div class="hero-role">Software Engineer · Software Developer · Flutter Developer(UI) · Front-End Developer<span
+            class="cursor-blink"></span></div>
+        <p class="hero-summary">B.Tech Computer Science graduate building cross-platform apps and web interfaces with
+          Flutter, Java, and JavaScript. Currently deep in Flutter/Dart training, shipping a TensorFlow Lite–powered
+          healthcare app, and looking for an entry-level software development role to grow in.</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">View Projects →</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="float-card">
+          <div class="fc-label">Currently building</div>
+          <div class="fc-title">MediScan AI</div>
+          <div class="fc-sub">Flutter + TensorFlow Lite</div>
+        </div>
+        <div class="avatar-wrap">
+          <div class="ripple"></div>
+          <div class="ripple"></div>
+          <div class="ripple"></div>
+          <div class="avatar-core"><span>SS</span></div>
+        </div>
+        <div class="float-card-2"><span class="dot"></span>Open to entry-level roles</div>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <div class="line"></div>SCROLL
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="reveal reveal-left">
+        <div class="eyebrow">About</div>
+        <h2 style="font-size:clamp(26px,3.4vw,36px);margin-bottom:22px;">A CS graduate who learns by shipping.</h2>
+        <div class="about-text">
+          <p>Motivated and detail-oriented, with a strong foundation in Java, Flutter, HTML5, CSS3, JavaScript, DBMS,
+            and basic Data Structures &amp; Algorithms. Completed industrial training in Web Designing and built
+            academic projects including an e-commerce cycle store and a travel booking website.</p>
+          <p>Passionate about software development and quick to pick up new technologies — currently focused on
+            Flutter/Dart and eager to contribute to real-world projects while sharpening technical and problem-solving
+            skills.</p>
+        </div>
+      </div>
+      <div class="reveal reveal-right">
+        <div class="fact-list">
+          <div class="fact"><span class="fact-label">Degree</span><span class="fact-value">B.Tech, CSE — BRCM CET,
+              Bhiwani</span></div>
+          <div class="fact"><span class="fact-label">Graduated</span><span class="fact-value">July 2026</span></div>
+          <div class="fact"><span class="fact-label">CGPA</span><span class="fact-value">7.0 / 10</span></div>
+          <div class="fact"><span class="fact-label">Based in</span><span class="fact-value">Noida, Uttar Pradesh</span>
+          </div>
+          <div class="fact"><span class="fact-label">Languages</span><span class="fact-value">Hindi (Native), English
+              (Conversational)</span></div>
+          <div class="fact"><span class="fact-label">Looking for</span><span class="fact-value">Entry-level Software
+              Developer role</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-section">
+    <div class="marquee-label">Training &amp; Certifications</div>
+    <div class="marquee-viewport">
+      <div class="marquee-track" id="marquee-track">
+        <!-- populated twice via JS for seamless loop -->
+      </div>
+    </div>
+  </div>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal reveal-up">
+        <span class="num-tag">01 / SKILLS</span>
+        <h2>Technical toolkit</h2>
+        <p>Languages, frameworks, and tools used across coursework, training, and personal projects.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="reveal reveal-up">
+          <div class="skill-cat-title">Languages</div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">Java</span><span class="spct">80%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="80"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">Dart</span><span class="spct">78%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="78"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">JavaScript</span><span class="spct">75%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="75"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">HTML5 / CSS3</span><span class="spct">85%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="85"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">SQL</span><span class="spct">65%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="65"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">C / Python</span><span class="spct">55%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="55"></div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-up">
+          <div class="skill-cat-title">Frameworks &amp; Tools</div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">Flutter</span><span class="spct">80%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="80"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">Bootstrap</span><span class="spct">75%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="75"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">Git &amp; GitHub</span><span class="spct">72%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="72"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">Android Studio</span><span class="spct">68%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="68"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">MySQL</span><span class="spct">62%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="62"></div>
+            </div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-top"><span class="sname">OOP / DBMS / REST</span><span class="spct">70%</span></div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-level="70"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal reveal-up">
+        <span class="num-tag">02 / PROJECTS</span>
+        <h2>Things I've built</h2>
+        <p>Academic and training projects spanning front-end web development and Flutter mobile apps.</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-card reveal reveal-up">
+          <div class="project-index">01 / MOBILE · IN PROGRESS</div>
+          <h3>MediScan AI</h3>
+          <p>An AI-based healthcare application built in Flutter during industrial training.</p>
+          <ul>
+            <li>Responsive frontend screens with intuitive navigation and reusable UI components</li>
+            <li>Multiple disease-specific screens with seamless navigation</li>
+            <li>Currently integrating TensorFlow Lite for medical image classification</li>
+          </ul>
+          <div class="tag-row"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">TensorFlow
+              Lite</span></div>
+        </div>
+        <div class="project-card reveal reveal-up">
+          <div class="project-index">02 / WEB</div>
+          <h3>Cycle Store</h3>
+          <p>A well-structured front-end e-commerce project with semantic HTML and modern styling.</p>
+          <ul>
+            <li>Product Catalog, Contact Form, Testimonials &amp; Checkout modules</li>
+            <li>Dark Mode and dynamic product navigation</li>
+            <li>Clean, responsive interface for improved UX</li>
+          </ul>
+          <div class="tag-row"><span class="tag">HTML5</span><span class="tag">CSS3</span><span
+              class="tag">Bootstrap</span><span class="tag">JavaScript</span></div>
+        </div>
+        <div class="project-card reveal reveal-up">
+          <div class="project-index">03 / WEB</div>
+          <h3>Explore In India</h3>
+          <p>A tourism website featuring destination highlights and a booking system interface.</p>
+          <ul>
+            <li>Travel packages, image gallery &amp; booking flow</li>
+            <li>Reusable HTML components, organized CSS</li>
+            <li>Interactive navigation and JS-based functionality</li>
+          </ul>
+          <div class="tag-row"><span class="tag">HTML5</span><span class="tag">CSS3</span><span
+              class="tag">Bootstrap</span><span class="tag">JavaScript</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head reveal reveal-up">
+        <span class="num-tag">03 / EXPERIENCE</span>
+        <h2>Training &amp; industrial experience</h2>
+        <p>Hands-on programs where I moved from fundamentals to shipping real interfaces.</p>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal reveal-left">
+          <div class="tl-date">May 2026 — August 2026</div>
+          <h3>Flutter Development</h3>
+          <div class="tl-org">PrernaGati and Technology, Mohali, India</div>
+          <ul>
+            <li>Developed cross-platform mobile applications using Flutter and Dart.</li>
+            <li>Built responsive and reusable UI components following Flutter best practices.</li>
+            <li>Integrated REST APIs and Firebase for data handling and authentication.</li>
+            <li>Worked with Git/GitHub for version control and project collaboration.</li>
+            <li>Debugged and optimized application performance while following clean coding practices.</li>
+          </ul>
+        </div>
+        <div class="tl-item reveal reveal-left">
+          <div class="tl-date">July 2024 — August 2024</div>
+          <h3>Web Designing</h3>
+          <div class="tl-org">Solitaire Infosystem Pvt. Ltd., Mohali, India</div>
+          <ul>
+            <li>Hands-on training in HTML5, CSS3, Bootstrap, JavaScript &amp; responsive design</li>
+            <li>Applied modern UI principles and mobile-first techniques</li>
+            <li>Practical knowledge of form validation, cross-browser compatibility &amp; performance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head reveal reveal-up">
+        <span class="num-tag">04 / EDUCATION</span>
+        <h2>Academic background</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal reveal-up">
+          <div class="edu-year">Graduated July 2026</div>
+          <h3>B.Tech, Computer Science &amp; Engineering</h3>
+          <p>BRCM College of Engineering and Technology, Bhiwani, Haryana</p>
+          <div class="grade">CGPA 7.0 / 10</div>
+        </div>
+        <div class="edu-card reveal reveal-up">
+          <div class="edu-year">Completed June 2022</div>
+          <h3>12th — Senior Secondary</h3>
+          <p>UP State Board of High School &amp; Intermediate Education, Azamgarh, UP</p>
+        </div>
+        <div class="edu-card reveal reveal-up">
+          <div class="edu-year">Completed June 2020</div>
+          <h3>10th — Secondary</h3>
+          <p>UP State Board of High School &amp; Intermediate Education, Azamgarh, UP</p>
+        </div>
+      </div>
+      <div class="lang-row reveal reveal-up">
+        <div class="lang-item">
+          <div class="lname">Hindi</div>
+          <div class="llevel">Native / Fluent — Read, Write, Speak</div>
+        </div>
+        <div class="lang-item">
+          <div class="lname">English</div>
+          <div class="llevel">Good — Read, Write, Speak (Conversational)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-ripple-wrap">
+      <div class="ripple"></div>
+      <div class="ripple"></div>
+      <div class="ripple"></div>
+    </div>
+    <div class="wrap contact-inner reveal reveal-up">
+      <div class="eyebrow" style="justify-content:center;">Contact</div>
+      <h2>Let's build something.</h2>
+      <p class="sub">Open to entry-level Software Developer, QA, or IT Support roles — and always happy to talk Flutter,
+        freelance app work, or web projects.</p>
+      <div class="contact-links">
+        <a href="mailto:shivasaini13487@gmail.com" class="contact-chip">✉ shivasaini13487@gmail.com</a>
+        <a href="tel:+919453178221" class="contact-chip">☎ +91 9453178221</a>
+        <a href="https://linkedin.com/in/shiva-saini-32bb64290/" target="_blank" rel="noopener" class="contact-chip">in
+          LinkedIn</a>
+        <a href="https://github.com/shivasaini13487-cpu/" target="_blank" rel="noopener" class="contact-chip">⌥
+          GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <div>© 2026 Shiva Saini. Built with HTML, CSS &amp; JavaScript.</div>
+    <div>Noida, Uttar Pradesh, India</div>
+  </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
