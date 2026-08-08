@@ -18,11 +18,14 @@ A modern, responsive, and interactive personal portfolio website showcasing my s
 
 ### 🏠 Home Page
 
-![Portfolio Home](screenshots/home.png)
+<img width="1884" height="904" alt="image" src="https://github.com/user-attachments/assets/fb6cbfa8-e69f-48ff-ae2b-17748dc76826" />
+
 
 ### 💼 Projects Section
 
-![Portfolio Projects](screenshots/projects.png)
+<img width="1892" height="907" alt="image" src="https://github.com/user-attachments/assets/448acaab-32a8-44b1-bece-d4e2bfc9db6c" />
+
+
 
 ---
 
